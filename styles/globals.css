@@ -108,3 +108,8 @@ body {
     ),
     linear-gradient(90deg, rgb(13, 8, 66), rgb(230, 168, 209));
 }
+
+h1 {
+  color: white;
+  text-align: center;
+}
