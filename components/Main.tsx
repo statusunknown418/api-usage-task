@@ -1,4 +1,5 @@
 import axios from "axios";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import styles from "../styles/modules/main.module.css";
 interface Props {}
@@ -23,7 +24,9 @@ export const Main: React.FC<Props> = () => {
       const returnFinalData = data.map((item) => (
         <div key={item.id} className={styles.item}>
           <h3>Movie : {item.title}</h3>
-          <img
+          <Image
+            width={500}
+            height={500}
             src={`https://image.tmdb.org/t/p/w500${item.poster_path}`}
             alt={`${item.title}`}
           />
