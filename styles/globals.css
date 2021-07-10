@@ -14,3 +14,97 @@ a {
 * {
   box-sizing: border-box;
 }
+body {
+  background-image: repeating-linear-gradient(
+      45deg,
+      hsla(253, 0%, 98%, 0.03) 0px,
+      hsla(253, 0%, 98%, 0.03) 1px,
+      transparent 1px,
+      transparent 12px
+    ),
+    repeating-linear-gradient(
+      112.5deg,
+      hsla(253, 0%, 98%, 0.03) 0px,
+      hsla(253, 0%, 98%, 0.03) 1px,
+      transparent 1px,
+      transparent 12px
+    ),
+    repeating-linear-gradient(
+      22.5deg,
+      hsla(253, 0%, 98%, 0.03) 0px,
+      hsla(253, 0%, 98%, 0.03) 1px,
+      transparent 1px,
+      transparent 12px
+    ),
+    repeating-linear-gradient(
+      67.5deg,
+      hsla(253, 0%, 98%, 0.03) 0px,
+      hsla(253, 0%, 98%, 0.03) 1px,
+      transparent 1px,
+      transparent 12px
+    ),
+    repeating-linear-gradient(
+      45deg,
+      hsla(253, 0%, 98%, 0.03) 0px,
+      hsla(253, 0%, 98%, 0.03) 1px,
+      transparent 1px,
+      transparent 12px
+    ),
+    repeating-linear-gradient(
+      157.5deg,
+      hsla(253, 0%, 98%, 0.03) 0px,
+      hsla(253, 0%, 98%, 0.03) 1px,
+      transparent 1px,
+      transparent 12px
+    ),
+    repeating-linear-gradient(
+      112.5deg,
+      hsla(253, 0%, 98%, 0.03) 0px,
+      hsla(253, 0%, 98%, 0.03) 1px,
+      transparent 1px,
+      transparent 12px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      hsla(253, 0%, 98%, 0.03) 0px,
+      hsla(253, 0%, 98%, 0.03) 1px,
+      transparent 1px,
+      transparent 12px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      hsla(253, 0%, 98%, 0.03) 0px,
+      hsla(253, 0%, 98%, 0.03) 1px,
+      transparent 1px,
+      transparent 12px
+    ),
+    repeating-linear-gradient(
+      135deg,
+      hsla(253, 0%, 98%, 0.03) 0px,
+      hsla(253, 0%, 98%, 0.03) 1px,
+      transparent 1px,
+      transparent 12px
+    ),
+    repeating-linear-gradient(
+      67.5deg,
+      hsla(253, 0%, 98%, 0.03) 0px,
+      hsla(253, 0%, 98%, 0.03) 1px,
+      transparent 1px,
+      transparent 12px
+    ),
+    repeating-linear-gradient(
+      135deg,
+      hsla(253, 0%, 98%, 0.03) 0px,
+      hsla(253, 0%, 98%, 0.03) 1px,
+      transparent 1px,
+      transparent 12px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      hsla(253, 0%, 98%, 0.03) 0px,
+      hsla(253, 0%, 98%, 0.03) 1px,
+      transparent 1px,
+      transparent 12px
+    ),
+    linear-gradient(90deg, rgb(13, 8, 66), rgb(230, 168, 209));
+}
