@@ -2,11 +2,10 @@ import axios from "axios";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import styles from "../styles/modules/main.module.css";
-interface Props {}
 
-export const Main: React.FC<Props> = () => {
+export const Main: React.FC = () => {
   const [newdata, setNewData] = useState([]);
-  const [result, setResult] = useState(null);
+  const [result, setResult] = useState(false);
   const axiosFetch = () => {
     return axios
       .get(
@@ -23,9 +22,9 @@ export const Main: React.FC<Props> = () => {
       const data = await axiosFetch();
       const returnFinalData = data.map((item) => (
         <div key={item.id} className={styles.item}>
-          <h3>Movie : {item.title}</h3>
+          <h3>{item.title}</h3>
           <Image
-            width={500}
+            width={400}
             height={500}
             src={`https://image.tmdb.org/t/p/w500${item.poster_path}`}
             alt={`${item.title}`}
@@ -49,13 +48,14 @@ export const Main: React.FC<Props> = () => {
         </button>
         <button
           onClick={() => {
-            setResult(newdata);
+            setResult(result ? false : true);
           }}
+          className={styles.primary_btn}
         >
-          Show everything
+          {result ? "Hide All" : "Show everything"}
         </button>
       </div>
-      <div className={styles.main}>{result ? newdata : null}</div>
+      <div className={styles.main}>{result && newdata}</div>
     </div>
   );
 };
